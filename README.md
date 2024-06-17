@@ -1,4 +1,4 @@
-# Rock Climbing Tracker
+# Simple Web App Template with GitHub Actions enabled (for public repos)
 
 A web application for tracking milestones and accomplishments in rock climbing over time.
 
