@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Climbing Tracker - Add Climb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Add a New Climb</h1>
+        </header>
+        <nav>
+            <button onclick="location.href='history.html'">View History</button>
+        </nav>
+        <form id="climb-form">
+            <label for="level">Level of Climb:</label>
+            <select id="level" name="level">
+                <option value="VB">VB</option>
+                <option value="V0">V0</option>
+                <option value="V1">V1</option>
+                <option value="V2">V2</option>
+                <option value="V3">V3</option>
+                <option value="V4">V4</option>
+                <option value="V5">V5</option>
+                <option value="V6">V6</option>
+                <option value="V7">V7</option>
+                <option value="V8">V8</option>
+                <option value="V9">V9</option>
+                <option value="V10">V10</option>
+                <option value="V11">V11</option>
+                <option value="V12">V12</option>
+                <option value="V13">V13</option>
+                <option value="V14">V14</option>
+                <option value="V15">V15</option>
+                <option value="V16">V16</option>
+            </select>
+
+            <label>Gym Location:</label>
+            <div class="gym-buttons">
+                <button type="button" id="gym1" class="gym-button">Gym 1</button>
+                <button type="button" id="gym2" class="gym-button">Gym 2</button>
+                <button type="button" id="gym3" class="gym-button">Gym 3</button>
+            </div>
+            <input type="hidden" id="gym-location" name="location">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="wall-type">Type of Wall:</label>
+            <select id="wall-type" name="wallType">
+                <option value="slab">Slab</option>
+                <option value="light-overhang">Light Overhang</option>
+                <option value="deep-overhang">Deep Overhang</option>
+            </select>
+
+            <label>Types of Holds:</label>
+            <div>
+                <input type="checkbox" id="crimp" name="holds" value="crimp">
+                <label for="crimp">Crimp</label>
+            </div>
+            <div>
+                <input type="checkbox" id="jug" name="holds" value="jug">
+                <label for="jug">Jug</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pinch" name="holds" value="pinch">
+                <label for="pinch">Pinch</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sloper" name="holds" value="sloper">
+                <label for="sloper">Sloper</label>
+            </div>
+            
+            <button type="submit">Add Climb</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
